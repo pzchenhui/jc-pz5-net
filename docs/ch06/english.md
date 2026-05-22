@@ -25,6 +25,27 @@
 
 </div>
 
+<div class="case-card">
+<span class="case-label">📌 真实案例</span>
+
+### 李老师的口语教学创新
+
+李老师是某初中英语教师，班上学生口语练习机会少。
+
+**传统方式**：
+- 课堂口语练习时间有限（每节课10-15分钟）
+- 学生一对一练习机会少（50人/班）
+- 学生课外缺乏练习对象
+
+**AI口语智能体辅助后**：
+- 学生课后与AI对话练习（每人每天10分钟）
+- AI即时纠正语法和发音错误
+- 每月口语测评，追踪进步
+
+**效果**：期末口语测试平均分提升 15 分（百分制），学生开口意愿提升 80%
+
+</div>
+
 ## 语法练习智能体搭建
 
 ### Step 1：设定人设
@@ -97,6 +118,31 @@
 
 </div>
 
+### Step 3：工作流配置
+
+```
+开始（选择语法点和学段）
+  ↓
+节点1：语法讲解生成
+  → 生成简洁的语法说明
+  → 提供3-5个典型例句
+  ↓
+节点2：题目生成
+  → 选择题（5题）
+  → 填空题（5题）
+  → 改错题（3题）
+  ↓
+节点3：答案和解析
+  → 标准答案
+  → 每题解析（为什么选这个）
+  ↓
+节点4：格式化输出
+  → 学生版（题目）
+  → 教师版（题目+答案+解析）
+  ↓
+结束
+```
+
 ## 口语训练智能体
 
 ### 人设模板
@@ -124,6 +170,42 @@
 - 校园生活：课堂发言、小组讨论、演讲
 - 旅行场景：机场、酒店、景点、餐厅
 - 职场场景：面试、会议、电话、邮件
+```
+
+</div>
+
+### 口语对话示例
+
+<div class="exercise-card">
+<span class="exercise-label">💬 口语对话示例</span>
+
+```
+🎤 口语训练：餐厅点餐
+
+情景：你在一家西餐厅，需要点餐。
+AI扮演：服务员
+你扮演：顾客
+
+---
+服务员：Good afternoon! Welcome to our restaurant. May I help you?
+学生：I want some food.
+AI反馈：✅ 语法正确，但表达不够地道。
+改进建议：更自然的说法是 "I'd like to order, please." 或 "Could I see the menu?"
+
+服务员：Of course! Here's the menu. Are you ready to order?
+学生：I'd like a hamburger and a cup of coffee, please.
+AI反馈：✅ 非常好！表达地道，语法正确。
+改进建议：可以尝试更礼貌的说法 "I'd like to have a hamburger..."
+
+服务员：Would you like anything else?
+学生：No, that's all. Thank you.
+AI反馈：✅ 完美！
+
+本次口语评分：85/100
+- 语法：90/100
+- 表达：80/100
+- 流利度：85/100
+改进建议：多使用礼貌用语（please, thank you, could I...）
 ```
 
 </div>
@@ -163,13 +245,79 @@
 
 </div>
 
+### 听力材料生成示例
+
+```
+🎧 听力材料生成
+
+主题：学校生活 | 难度：初中 | 语速：中等
+
+【听力文本】（AI语音合成）
+"Hello, I'm Tom. I'm a student in Grade 8. Every day, I get up at 6:30.
+I have breakfast at 7:00 and go to school at 7:30.
+My classes start at 8:00. I have four classes in the morning and two in the afternoon.
+After school, I usually play basketball with my friends for one hour.
+I go home at 5:30 and do my homework in the evening."
+
+【听力题目】
+1. What time does Tom get up?
+   A. 6:00  B. 6:30  C. 7:00  D. 7:30
+   答案：B
+
+2. How many classes does Tom have every day?
+   A. 4  B. 5  C. 6  D. 7
+   答案：C
+
+3. What does Tom usually do after school?
+   A. Go home  B. Play basketball  C. Do homework  D. Watch TV
+   答案：B
+```
+
+## 写作批改智能体
+
+### 人设模板
+
+```
+你是一位英语写作批改专家，具备以下能力：
+
+1. 能够识别语法错误（时态、语态、从句、主谓一致等）
+2. 能够评价文章结构（开头、主体、结尾）
+3. 能够评价内容（主题明确、论据充分）
+4. 能够提供改进建议（词汇、句式、逻辑）
+
+批改维度：
+- 语法（30%）：时态、语态、句型
+- 内容（30%）：主题、论据、逻辑
+- 结构（20%）：段落、过渡、连贯
+- 词汇（20%）：用词准确、多样性
+```
+
 ## 多平台推荐
 
 | 平台 | 推荐度 | 适用场景 |
 |------|--------|---------|
 | **Coze** | ⭐⭐⭐⭐⭐ | 口语对话练习+工作流编排 |
-| **智谱清言** | ⭐⭐⭐⭐ | 语法讲解+练习生成 |
+| **智谱清言** | ⭐⭐⭐⭐⭐ | 语法讲解+练习生成 |
 | **通义千问** | ⭐⭐⭐⭐ | 语音合成（阿里生态） |
+| **Kimi** | ⭐⭐⭐⭐ | 长文档分析（整篇作文批改） |
+
+## 真实案例对比：不同平台的语法练习生成效果
+
+<div class="case-card">
+<span class="label">📊 平台对比测试</span>
+
+### 同一语法点：现在完成时
+
+| 平台 | 讲解质量 | 题目质量 | 解析质量 | 综合评分 |
+|------|---------|---------|---------|---------|
+| Coze | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 88/100 |
+| 智谱清言 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 90/100 |
+| Kimi | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 85/100 |
+| 通义千问 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 84/100 |
+
+> 💡 **建议**：语法练习首选智谱清言（讲解清晰），口语训练首选Coze（工作流编排灵活）。
+
+</div>
 
 ## 测试检查清单
 
