@@ -104,10 +104,10 @@ export default defineConfig({
         { text: '📝 第9章练习', link: '/ch09/exercises' },
       ]}],
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/pzchenhui/jc-pz5-net' }],
     footer: { message: '本网站为公益培训网站，免费使用，所有代码已公开至 github.com', copyright: 'Copyright © 2026 AI智能体教师教程 陈辉制作' },
     outline: { level: [2, 3], label: '页面导航' },
-    editLink: { pattern: 'https://github.com/example/jc-pz5-net/edit/main/docs/:path', text: '在 GitHub 上编辑此页' },
+    editLink: { pattern: 'https://github.com/pzchenhui/jc-pz5-net/edit/main/docs/:path', text: '在 GitHub 上编辑此页' },
     search: { provider: 'local' },
     docFooter: { prev: '上一页', next: '下一页' },
     // 视觉优化
