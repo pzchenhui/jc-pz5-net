@@ -2,7 +2,7 @@
 
 [![Website](https://img.shields.io/badge/网站-jc.pz5.net-4f46e5?style=for-the-badge&logo=vitepress)](https://jc.pz5.net)
 ![License](https://img.shields.io/badge/公益网站-免费使用-brightgreen?style=for-the-badge)
-![Chapters](https://img.shields.io/badge/章节-9章42节-orange?style=for-the-badge)
+![Chapters](https://img.shields.io/badge/章节-10章62节-orange?style=for-the-badge)
 
 > **学好AI智能体，做轻松智慧好老师**
 > 
