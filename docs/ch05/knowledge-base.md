@@ -281,21 +281,21 @@ OCR转换后，务必人工校对以下内容：
 - 建议使用官方电子版（排版清晰、无扫描失真）
 
 <span class="step-number">2</span>
-<span class="step-title">整理课标**
+<span class="step-title">整理课标</span>
 
 - 下载教育部发布的最新版课程标准
 - 官方下载地址：http://www.moe.gov.cn/
 - 确认是2022年版（最新版）
 
 <span class="step-number">3</span>
-<span class="step-title">整理错题和例题**
+<span class="step-title">整理错题和例题</span>
 
 - 从教研组资料中提取常见错题
 - 整理为统一格式（题目+错误+原因+正确解法）
 - 建议至少50-100道典型错题
 
 <span class="step-number">4</span>
-<span class="step-title">检查文件格式**
+<span class="step-title">检查文件格式</span>
 
 - 确认所有PDF文件文字可复制（选中文字能复制）
 - 扫描件需要先做OCR转换
@@ -321,7 +321,7 @@ OCR转换后，务必人工校对以下内容：
 3. 选择知识库类型（推荐"文档知识库"）
 
 <span class="step-number">3</span>
-<span class="step-title">上传文件**
+<span class="step-title">上传文件</span>
 
 1. 点击「上传文件」
 2. 选择准备好的教材、课标、错题等文件
@@ -331,7 +331,7 @@ OCR转换后，务必人工校对以下内容：
 > ⚠️ **注意**：如果文件处理失败，检查文件格式是否正确。扫描件PDF需要先OCR转换。
 
 <span class="step-number">4</span>
-<span class="step-title">关联到智能体**
+<span class="step-title">关联到智能体</span>
 
 1. 返回智能体编辑页面
 2. 在「知识」或「能力」模块中添加刚创建的知识库
@@ -343,7 +343,7 @@ OCR转换后，务必人工校对以下内容：
 
 <div class="step-card">
 <span class="step-number">1</span>
-<span class="step-title">基础测试**
+<span class="step-title">基础测试</span>
 
 提问与知识库内容相关的问题：
 - "什么是光合作用？"（生物学伴）
@@ -356,7 +356,7 @@ OCR转换后，务必人工校对以下内容：
 - 术语是否与教材一致
 
 <span class="step-number">2</span>
-<span class="step-title">超纲测试**
+<span class="step-title">超纲测试</span>
 
 提问超出当前学段的问题：
 - 小学学伴：问初中内容（如"什么是二元一次方程"）
@@ -365,7 +365,7 @@ OCR转换后，务必人工校对以下内容：
 预期：AI应提示"这个问题超出当前学习范围"或"这是更高年级的内容"。
 
 <span class="step-number">3</span>
-<span class="step-title">错题测试**
+<span class="step-title">错题测试</span>
 
 提问常见易错题：
 - "1/2 + 1/3 等于多少？"（检查是否提醒通分）
