@@ -26,11 +26,62 @@
   --vp-doc-max-width: 900px;
 }
 
-.VPDoc :is(h1, h2, h3, h4, h5, h6) {
-  font-weight: 700;
-  letter-spacing: -0.02em;
+/* === 明亮模式：所有文字用深色 === */
+/* 正文 */
+html:not(.dark) .VPDoc,
+html:not(.dark) .VPDoc p,
+html:not(.dark) .VPDoc li,
+html:not(.dark) .VPDoc td,
+html:not(.dark) .VPDoc th {
+  color: #1c1917;
 }
 
+/* 标题 */
+html:not(.dark) .VPDoc h1,
+html:not(.dark) .VPDoc h2,
+html:not(.dark) .VPDoc h3,
+html:not(.dark) .VPDoc h4,
+html:not(.dark) .VPDoc h5,
+html:not(.dark) .VPDoc h6 {
+  color: #1c1917;
+}
+
+/* 强/斜体 */
+html:not(.dark) .VPDoc strong,
+html:not(.dark) .VPDoc em {
+  color: #1c1917;
+}
+
+/* 链接 */
+html:not(.dark) .VPDoc a {
+  color: var(--vp-c-brand-1);
+}
+
+html:not(.dark) .VPDoc a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+/* 卡片 */
+html:not(.dark) .VPDoc .case-card,
+html:not(.dark) .VPDoc .template-card,
+html:not(.dark) .VPDoc .exercise-card,
+html:not(.dark) .VPDoc .audience-card,
+html:not(.dark) .VPDoc .roadmap-step,
+html:not(.dark) .VPDoc .skill-item,
+html:not(.dark) .VPDoc .path-node,
+html:not(.dark) .VPDoc .comparison-card,
+html:not(.dark) .VPDoc .stat-item,
+html:not(.dark) .VPDoc .VPFeature {
+  color: #1c1917;
+}
+
+/* 代码 */
+html:not(.dark) .VPDoc code,
+html:not(.dark) .VPDoc pre code {
+  color: #1c1917;
+}
+
+/* h1 渐变色（明亮模式） */
 .VPDoc h1 {
   font-size: 2.2em;
   background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
@@ -54,6 +105,7 @@
 }
 
 /* === 表格美化 === */
+/* === 表格美化 === */
 .VPDoc table {
   border-radius: var(--vp-radius);
   overflow: hidden;
@@ -61,15 +113,17 @@
   border: 1px solid var(--vp-c-divider);
 }
 
+/* 表格标题行：深色渐变背景 + 白色加粗文字 */
 .VPDoc table thead {
-  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
-  color: white;
+  background: linear-gradient(135deg, #3730a3, #6d28d9);
 }
 
 .VPDoc table thead th {
-  color: white !important;
-  font-weight: 600;
+  color: #ffffff !important;
+  font-weight: 700;
   padding: 12px 16px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  letter-spacing: 0.02em;
 }
 
 .VPDoc table tbody td {
@@ -440,8 +494,138 @@
 .dark {
   --vp-c-bg: #0f0f14;
   --vp-c-bg-alt: #16161d;
+  --vp-c-bg-soft: #1e1e28;
   --vp-c-text-1: #e4e4e7;
   --vp-c-text-2: #a1a1aa;
+  --vp-c-text-3: #71717a;
+  --vp-c-divider: #2a2a35;
+  --vp-c-brand-soft: rgba(99, 102, 241, 0.2);
+  --vp-c-green-light: rgba(16, 185, 129, 0.2);
+  --vp-c-orange-light: rgba(245, 158, 11, 0.2);
+  --vp-c-pink-light: rgba(236, 72, 153, 0.2);
+  --vp-c-red-light: rgba(239, 68, 68, 0.15);
+}
+
+/* 暗色模式下：所有文字用浅色 */
+.dark .VPDoc,
+.dark .VPDoc p,
+.dark .VPDoc li,
+.dark .VPDoc td,
+.dark .VPDoc th,
+.dark .VPDoc strong,
+.dark .VPDoc em {
+  color: #e4e4e7;
+}
+
+.dark .VPDoc h1,
+.dark .VPDoc h2,
+.dark .VPDoc h3,
+.dark .VPDoc h4,
+.dark .VPDoc h5,
+.dark .VPDoc h6 {
+  color: #e4e4e7;
+}
+
+/* 暗色模式下链接 */
+.dark .VPDoc a {
+  color: #818cf8;
+}
+
+.dark .VPDoc a:hover {
+  color: #a78bfa;
+}
+
+/* 暗色模式下卡片 */
+.dark .VPDoc .case-card,
+.dark .VPDoc .template-card,
+.dark .VPDoc .exercise-card,
+.dark .VPDoc .audience-card,
+.dark .VPDoc .roadmap-step,
+.dark .VPDoc .skill-item,
+.dark .VPDoc .path-node,
+.dark .VPDoc .comparison-card,
+.dark .VPDoc .stat-item,
+.dark .VPDoc .VPFeature {
+  color: #e4e4e7;
+}
+
+/* 暗色模式下卡片内段落 */
+.dark .VPDoc .case-card p,
+.dark .VPDoc .template-card p,
+.dark .VPDoc .exercise-card p,
+.dark .VPDoc .audience-card p,
+.dark .VPDoc .roadmap-step p,
+.dark .VPDoc .skill-item p,
+.dark .VPDoc .path-node p,
+.dark .VPDoc .comparison-card p,
+.dark .VPDoc .stat-item p {
+  color: #e4e4e7;
+}
+
+/* 暗色模式下卡片标签 */
+.dark .case-label,
+.dark .template-label,
+.dark .exercise-label {
+  color: #e4e4e7;
+}
+
+/* 暗色模式下比较卡片 */
+.dark .VPDoc .comparison-card.bad p,
+.dark .VPDoc .comparison-card.bad li,
+.dark .VPDoc .comparison-card.bad td,
+.dark .VPDoc .comparison-card.bad th {
+  color: #e4e4e7;
+}
+
+.dark .VPDoc .comparison-card.good p,
+.dark .VPDoc .comparison-card.good li,
+.dark .VPDoc .comparison-card.good td,
+.dark .VPDoc .comparison-card.good th {
+  color: #e4e4e7;
+}
+
+/* 暗色模式下首页元素 */
+.dark .audience-card h3 {
+  color: #818cf8;
+}
+
+.dark .audience-card p {
+  color: #a1a1aa;
+}
+
+.dark .roadmap-step h3 {
+  color: #e4e4e7;
+}
+
+.dark .roadmap-step p {
+  color: #a1a1aa;
+}
+
+.dark .skill-text h4 {
+  color: #e4e4e7;
+}
+
+.dark .skill-text p {
+  color: #a1a1aa;
+}
+
+.dark .stat-label {
+  color: #a1a1aa;
+}
+
+.dark .path-node p {
+  color: #e4e4e7;
+}
+
+/* 暗色模式下代码块 */
+.dark .VPDoc code,
+.dark .VPDoc pre code {
+  color: #e4e4e7;
+}
+
+/* 暗色模式下引用块 */
+.dark .VPDoc blockquote {
+  color: #a1a1aa;
 }
 
 /* 底部Footer优化 */

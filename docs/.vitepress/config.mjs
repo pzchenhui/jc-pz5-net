@@ -6,6 +6,7 @@ export default defineConfig({
   base: '/',
   lang: 'zh-CN',
   lastUpdated: true,
+  appearance: true,
   themeConfig: {
     logo: '/logo.svg',
     nav: [
